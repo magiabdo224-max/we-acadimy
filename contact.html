@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | Bella Italia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+<div class="italian-line"></div>
+<header class="header">
+  <div class="container navbar">
+    <a class="brand" href="index.html"><span class="brand-icon">B</span><span><strong> Italia Academy</strong><small>LINGUA · CULTURA · PASSIONE</small></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-ar="الرئيسية" data-it="Home">الرئيسية</a>
+      <a href="about.html" data-ar="عن الأكاديمية" data-it="Accademia">عن الأكاديمية</a>
+      <a href="teachers.html" data-ar="المدرسون" data-it="Docenti">المدرسون</a>
+      <a href="courses.html" data-ar="الكورسات" data-it="Corsi">الكورسات</a>
+      <a href="reviews.html" data-ar="آراء الطلبة" data-it="Recensioni">آراء الطلبة</a>
+      <a href="contact.html" data-ar="تواصل معنا" data-it="Contatti">تواصل معنا</a>
+    </nav>
+    <div class="nav-actions"><button class="lang-btn" id="langBtn">IT</button><a href="contact.html" class="btn btn-gold" data-ar="ابدأ رحلتك" data-it="Inizia ora">ابدأ رحلتك</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" data-ar="إحنا هنا لمساعدتك" data-it="Siamo qui per aiutarti">إحنا هنا لمساعدتك</span>
+      <h1 data-ar="حكايتك الإيطالية <em>تبدأ برسالة.</em>"
+          data-it="La tua storia italiana <em>inizia con un messaggio.</em>">
+        حكايتك الإيطالية <em>تبدأ برسالة.</em>
+      </h1>
+      <p data-ar="احكيلنا عن هدفك وهنساعدك تعرف تبدأ منين."
+         data-it="Raccontaci i tuoi obiettivi e ti aiuteremo a capire da dove iniziare.">
+        احكيلنا عن هدفك وهنساعدك تعرف تبدأ منين.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-copy reveal">
+        <span class="eyebrow" data-ar="خلّينا نتكلم" data-it="Parliamone">خلّينا نتكلم</span>
+        <h2 data-ar="نختار بداية تناسبك." data-it="Troviamo il punto di partenza giusto per te.">نختار بداية تناسبك.</h2>
+        <p data-ar="اكتب بياناتك في النموذج، وهيتفتح واتساب برسالة جاهزة تقدر تراجعها وتبعتها."
+           data-it="Compila il modulo: WhatsApp si aprirà con un messaggio pronto che potrai controllare e inviare.">
+          اكتب بياناتك في النموذج، وهيتفتح واتساب برسالة جاهزة تقدر تراجعها وتبعتها.
+        </p>
+
+        <div class="contact-detail">
+          <span>✉</span>
+          <div><strong data-ar="البريد الإلكتروني" data-it="Email">البريد الإلكتروني</strong><p>hello@bellaitalia.example</p></div>
+        </div>
+
+        <div class="contact-detail">
+          <span>◷</span>
+          <div><strong data-ar="مواعيد الدراسة" data-it="Orari dei corsi">مواعيد الدراسة</strong><p data-ar="تواصل معنا لمعرفة المواعيد المتاحة" data-it="Contattaci per conoscere gli orari disponibili">تواصل معنا لمعرفة المواعيد المتاحة</p></div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <h2 data-ar="ابعتلنا رسالة" data-it="Scrivici">ابعتلنا رسالة</h2>
+        <p data-ar="املا البيانات عشان تجهّز رسالة على واتساب."
+           data-it="Compila i campi per preparare un messaggio WhatsApp.">
+          املا البيانات عشان تجهّز رسالة على واتساب.
+        </p>
+
+        <label for="name" data-ar="الاسم" data-it="Nome">الاسم</label>
+        <input id="name" name="name" type="text" required placeholder="اكتب اسمك">
+
+        <label for="phone" data-ar="رقم الموبايل (اختياري)" data-it="Telefono (facoltativo)">رقم الموبايل (اختياري)</label>
+        <input id="phone" name="phone" type="tel" placeholder="+20 ...">
+
+        <label for="course" data-ar="الكورس اللي مهتم بيه" data-it="Corso di interesse">الكورس اللي مهتم بيه</label>
+        <select id="course" name="course">
+          <option value="Italiano da Zero" data-ar="الإيطالية من الصفر" data-it="Italiano da Zero">الإيطالية من الصفر</option>
+          <option value="Conversazione & Fluency" data-ar="المحادثة والطلاقة" data-it="Conversazione & Fluency">المحادثة والطلاقة</option>
+          <option value="Studio & Lavoro" data-ar="الإيطالية للدراسة والعمل" data-it="Italiano per Studio & Lavoro">الإيطالية للدراسة والعمل</option>
+          <option value="Consulenza" data-ar="محتاج استشارة" data-it="Vorrei una consulenza">محتاج استشارة</option>
+        </select>
+
+        <label for="message" data-ar="رسالتك" data-it="Il tuo messaggio">رسالتك</label>
+        <textarea id="message" name="message" rows="4" placeholder="هدفك من تعلم الإيطالية..."></textarea>
+
+        <button class="btn btn-dark full-width" type="submit"
+                data-ar="إرسال عبر واتساب ↗" data-it="Invia su WhatsApp ↗">
+          إرسال عبر واتساب ↗
+        </button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container footer-inner"><a href="index.html" class="footer-logo">Bella Italia</a><span>© 2026 Bella Italia Academy</span><a href="#top" data-ar="العودة للأعلى ↑" data-it="Torna su ↑">العودة للأعلى ↑</a></div></footer>
+<a class="whatsapp" href="https://wa.me/201002543581" id="whatsappBtn" target="_blank" rel="noreferrer" aria-label="WhatsApp">☏</a>
+</body>
+</html>
